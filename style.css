@@ -58,7 +58,16 @@
       }
       #image_section img {
         width: 70%;
+        animation: spin 60s linear infinite;
       }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }}
+
       #subhead_line{
         margin: 20px;
         color: rgb(229, 174, 11) ;
