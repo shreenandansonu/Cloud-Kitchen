@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tray Trap Food </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Custom styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1354aa;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background-image: url('image/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+    .testimonial-section {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .testimonial-section h2 {
+      margin-bottom: 30px;
+    }
+
+    .testimonial-card {
+      max-width: 400px;
+      margin: 0 auto 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-card h5 {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-card p {
+      margin-bottom: 0;
+    }
+
+    .form-section {
+      background-color: #ffe1a8;
+      padding: 50px 0;
+    }
+
+    .form-section h2 {
+      margin-bottom: 30px;
+    }
+
+    .footer {
+      background-color: #723d46;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer p {
+      margin-bottom: 0;
+    }
+
+    /* Floating WhatsApp icon */
+    .whatsapp-icon {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 24px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp-icon:hover {
+      transform: scale(1.1);
+      color: #fff;
+      text-decoration: none;
+    }
+
+</style>
+</head>
+<body>
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome to Cloud Kitchen</h1>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="shree.jpg" alt="Person 1">
+            <h5>John Doe</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquam felis nec magna rutrum, ac rutrum enim pharetra.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="shree.jpg" alt="Person 2">
+            <h5>Jane Smith</h5>
+            <p>Ut lobortis ante sed dui porttitor placerat. Curabitur ac mi a nisl eleifend rutrum.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial-card">
+            <img src="shree.jpg" alt="Person 3">
+            <h5>Mark Johnson</h5>
+            <p>Phasellus dictum ipsum quis ligula luctus, sed cursus lacus consectetur. Sed vestibulum mauris nisl, non volutpat nunc efficitur ac.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <div class="container">
+      <h2>Place an Order</h2>
+      <form id="order-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="meal-type">Meal Type</label>
+            <select id="meal-type" class="form-control" required>
+              <option value="lunch">Vegiterian</option>
+              <option value="dinner">Non-Vegiterian</option>
+            </select>
+          </div>
+        <div class="form-group">
+          <label for="meal-kind">Meal Kind</label>
+          <select id="meal-kind" class="form-control" required>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Cloud Kitchen Address</p>
+        </div>
+        <div class="col-md-6">
+          <p>Social Media Handles</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank" class="whatsapp-icon">
+    <i class="fa fa-whatsapp" style="font-size:36px"></i>
+  </a>
+
+  <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script> <!-- Replace xxxxxxxxxx with your Font Awesome Kit ID -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
