@@ -254,13 +254,13 @@
       #triple_features{
         display: flex;
         justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: stretch;
   
       }
       .single_feature{
-        width: 50%;
+        width: 30%;
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -269,7 +269,6 @@
         align-items: center;
         align-self: center;
         border-radius: 7px;
-        margin: 10px;
         background-color: #ffd42a;
 
       }
