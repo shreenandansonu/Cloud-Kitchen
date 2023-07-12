@@ -292,3 +292,60 @@
         color: #000000;
         font-style: italic;
       }
+
+      #testimonial_section{
+        background-color: #ffd42a;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #head_text{
+        color: rgb(202, 10, 10);
+        font-size: xx-large;
+        padding: 10px;
+        padding-bottom: 20px;
+      }
+
+      #reviews_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .reviews{
+        background-color: rgb(202, 10, 10);
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        width: 80%;
+        padding: 5px;
+        margin: 10px;
+      }
+      .pic{
+        width: 20%;
+        margin: 10px;
+
+      }
+      .pic img{
+        width: 100%;
+        border-radius:07%;
+        
+      }
+      .text_space{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        justify-content:center;
+      }
+      .who_said{
+        color: #ffd42a;
+        font-size: x-large;
+        padding: 5px 0px;
+      }
+      .they_said{
+        font-style: italic;
+        text-align: justify;
+        color: white;
+      }
