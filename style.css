@@ -254,22 +254,22 @@
       #triple_features{
         display: flex;
         justify-content: space-between;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
   
       }
       .single_feature{
-        width: 33%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-content: space-between;
-        padding: 10px 5px;
+        padding: 20px 5px;
         text-align: center;
         align-items: center;
         align-self: center;
         border-radius: 7px;
-        margin: px;
+        margin: 10px;
         background-color: #ffd42a;
 
       }
